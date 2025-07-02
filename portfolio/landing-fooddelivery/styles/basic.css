@@ -1,0 +1,71 @@
+/*Основные стили*/
+:root {
+    --width-container-big: 1171px;
+    --width-container-small: 280px;
+
+    --background-color-button: #FF9401;
+    --paddings-button: 16px 32px;
+    --paddings-button-small: 10px 26px;
+    --border-radius-button: 31px;
+    --color-text-button: #FFFFFF;
+
+
+    --font-family-title-1: 'Gilroy-bold', sans-serif;
+    --font-family-title-2: 'Gilroy-light', sans-serif;
+    --font-family-text: 'Circular', sans-serif;
+    --font-family-buttons: 'Circular', sans-serif;
+
+
+    --font-size-text: 20px;
+    --font-size-text-small: 16px;
+    --font-size-department: 24px;
+    --font-size-department-small: 20px;
+    --font-size-h3: 48px;
+    --font-size-buttons: 20px;
+    --font-size-buttons-small: 14px;
+
+    --font-weight-text: 450;
+    --font-weight-buttons: 500;
+
+    --line-height-text: 160%;
+    --line-height-buttons: 30px;
+
+    --box-shadow: 0px 10px 40px 0px #FF940133;
+
+    --color-text-1: #3F3232;
+    --color-text-2: #FF9401;
+    --color-text-3: #FFFFFF;
+    --color-text-4: #2E2E2E;
+
+    --background-gradient: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+
+    --margin-sections-650: 70px auto 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body {}
+h1, h2 {}
+p {}
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Circular';
+    src: url('../assets/fonts/CircularStd-Book.woff2') format('woff2'),
+         url('../assets/fonts/CircularStd-Book.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy-bold';
+    src: url('../assets/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+         url('../assets/fonts/Gilroy-ExtraBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy-light';
+    src: url('../assets/fonts/Gilroy-Light.woff2') format('woff2'),
+         url('../assets/fonts/Gilroy-Light.woff') format('woff');
+}

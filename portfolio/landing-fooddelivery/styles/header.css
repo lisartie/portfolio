@@ -1,0 +1,16 @@
+.header {
+    max-width: var(--width-container-big);
+    margin: 0 auto;
+    padding: 46px 20px;
+}
+.header__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 520px) {
+    .header__img {
+        opacity: 0.3;
+    }
+}
