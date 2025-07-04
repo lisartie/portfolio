@@ -126,6 +126,7 @@
     max-width: var(--width-container-big);
     margin: 0 auto;
     text-align: center;
+    padding: 0px 20px;
 }
 .menu__h3 {
     margin: 13px 0px 73px;
@@ -196,6 +197,28 @@
         max-width: 600px;
     }
 }
+@media (max-width: 1120px) {
+    .menu__wrapper {
+        max-width: 870px;
+    }
+    .memu__item {
+        max-width: 280px;
+    }
+    .menu__img {
+        max-width: 256px;
+    }
+}
+@media (max-width: 902px) {
+    .menu__wrapper {
+        max-width: 650px;
+    }
+    .memu__item {
+        max-width: 185px;
+    }
+    .menu__img {
+        max-width: 176px;
+    }
+}
 @media (max-width: 1050px) {
     .main__img-2 {
         max-width: 210px;
@@ -217,6 +240,18 @@
         max-width: 430px;
     }
 }
+@media (max-width: 690px) {
+    
+    .menu__wrapper {
+        max-width: 520px;
+    }
+    .memu__item {
+        max-width: 354px;
+    }
+    .menu__img {
+        max-width: 354px;
+    }
+}
 @media (max-width: 650px) {
     .banner {
         margin: var(--margin-sections-650);
@@ -227,6 +262,13 @@
     }
     .about-us {
         margin: 50px 0px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    [class*='__h3'] {
+        font-size: 42px;
     }
 }
 @media (max-width: 520px) {
@@ -280,6 +322,7 @@
     .about-us__link {
         padding: var(--paddings-button-small);
         margin: 28px 0px 0px;
+        font-size: var(--font-size-buttons-small);
     }
     .service {
         max-width: var(--width-container-small);
@@ -287,11 +330,28 @@
     .service__item {
         max-width: var(--width-container-small);
     }
+    .menu {
+        padding: 57px 0px 26px;
+        background: var(--background-gradient);
+    }
     .memu__item {
         max-width: var(--width-container-small);
-        padding: 12px 12px 22px 12px;
-        border-radius: 8px;
-        background-color: #FFFFFF;
-        box-shadow: var(--box-shadow);
+    }
+    .menu__wrapper {
+        max-width: var(--width-container-small);
+    }
+    .menu__img {
+        max-width: 256px;
+    }
+    .menu__h3 {
+        margin: 13px 0px 43px;
+    }
+    .menu__items {
+        padding-bottom: 42px;
+    }
+    .menu__link {
+        padding: var(--paddings-button-small);
+        margin: 24px 0px 30px;
+        font-size: var(--font-size-buttons-small);
     }
 }
