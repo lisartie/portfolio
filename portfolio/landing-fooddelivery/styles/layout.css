@@ -82,8 +82,53 @@
 }
 .main__img-3 {
     position: relative;
-    left: 1050px;
+    left: 1200px;
     top: 180px
+}
+.main__img-4, .main__img-5 {
+    position: absolute;
+    z-index: -1;
+}
+.main__img-4 {
+    left: 0;
+}
+.main__img-5 {
+    right: 0;
+}
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviews__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviews__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.footer__contacts {
+    display: flex;
+    align-items: center;
+    gap: 13px;
 }
 @media (max-width: 1270px) {
     .main__img-2 {

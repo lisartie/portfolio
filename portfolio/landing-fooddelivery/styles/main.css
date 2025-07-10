@@ -192,6 +192,108 @@
     line-height: var(--line-height-buttons);
     box-shadow: var(--box-shadow);
 }
+.app {
+    max-width: var(--width-container-big);
+    margin: 160px auto 80px;
+    padding: 0px 20px;
+}
+.app__content {
+    max-width: 451px;
+}
+.app__h3 {
+    margin: 23px 0px 18px;
+}
+.app__text {
+    margin-bottom: 39px;
+}
+.reviews {
+    max-width: var(--width-container-big);
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+.reviews__content {
+    max-width: 357px;
+}
+.reviews__h3 {
+    margin: 23px 0px 30px;
+}
+.reviews__review {
+    margin-bottom: 45px;
+    font-family: var(--font-family-text);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: var(--line-height-text);
+}
+.reviews__author {
+    font-family: var(--font-family-title-2);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.reviews__author-job-title {
+    margin-top: 4px;
+    font-family: var(--font-family-text);
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 22px;
+}
+.reviews__button, .reviews__button_active {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.reviews__button_active {
+    color: #FF9401;
+}
+
+.footer {
+    background: var(--background-gradient);
+}
+.footer__wrapper {
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 83px 0px 47px;
+}
+
+.footer__contact {
+    font-family: var(--font-family-buttons);
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 30px;
+    color: #6A5C5C;
+}
+.footer__h4 {
+    font-family: var(--font-family-title-2);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    color: var(--color-text-4);
+}
+.footer__link, .footer__link-social {
+    font-family: var(--font-family-buttons);
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 30px;
+    color: #6A5C5C;
+}
+.footer__link-social {
+    border-bottom: 1px solid var(--color-text-4);
+    color: var(--color-text-4);
+}
+.footer__autorship {
+    text-align: center;
+    margin-top: 47px;
+    font-family: var(--font-family-text);
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 120%;
+    color: #685D5D;
+}
+.footer__span {
+    font-size: 16px;
+    color: var(--color-text-2);
+}
 @media (max-width: 1270px) {
     .about-us__image {
         max-width: 600px;
