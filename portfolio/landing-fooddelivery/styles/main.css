@@ -247,56 +247,20 @@
     color: #FF9401;
 }
 
-.footer {
-    background: var(--background-gradient);
-}
-.footer__wrapper {
-    max-width: 1125px;
-    margin: 0 auto;
-    padding: 83px 0px 47px;
-}
-
-.footer__contact {
-    font-family: var(--font-family-buttons);
-    font-size: 16px;
-    font-weight: 450;
-    line-height: 30px;
-    color: #6A5C5C;
-}
-.footer__h4 {
-    font-family: var(--font-family-title-2);
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 30px;
-    color: var(--color-text-4);
-}
-.footer__link, .footer__link-social {
-    font-family: var(--font-family-buttons);
-    font-size: 16px;
-    font-weight: 450;
-    line-height: 30px;
-    color: #6A5C5C;
-}
-.footer__link-social {
-    border-bottom: 1px solid var(--color-text-4);
-    color: var(--color-text-4);
-}
-.footer__autorship {
-    text-align: center;
-    margin-top: 47px;
-    font-family: var(--font-family-text);
-    font-size: 12px;
-    font-weight: 450;
-    line-height: 120%;
-    color: #685D5D;
-}
-.footer__span {
-    font-size: 16px;
-    color: var(--color-text-2);
-}
 @media (max-width: 1270px) {
     .about-us__image {
         max-width: 600px;
+    }
+}
+@media (max-width: 1030px) {
+    .app__img {
+        max-width: 450px;
+    }
+    .app__img_size {
+        max-width: 300px;
+    }
+    .reviews__img {
+        max-width: 450px;
     }
 }
 @media (max-width: 1120px) {
@@ -308,6 +272,12 @@
     }
     .menu__img {
         max-width: 256px;
+    }
+    .main__img-4 {
+        max-width: 250px;
+    }
+    .main__img-5 {
+        max-width: 300px;
     }
 }
 @media (max-width: 902px) {
@@ -342,8 +312,8 @@
         max-width: 430px;
     }
 }
+
 @media (max-width: 690px) {
-    
     .menu__wrapper {
         max-width: 520px;
     }
@@ -365,12 +335,14 @@
     .about-us {
         margin: 50px 0px;
     }
-    
 }
 
 @media (max-width: 700px) {
     [class*='__h3'] {
         font-size: 42px;
+    }
+    .main__img-6 {
+        opacity: 0.5;
     }
 }
 @media (max-width: 520px) {
@@ -455,5 +427,20 @@
         padding: var(--paddings-button-small);
         margin: 24px 0px 30px;
         font-size: var(--font-size-buttons-small);
+    }   
+    .app__img {
+        max-width: 280px;
+    }
+    .app__img_size {
+        max-width: 280px;
+    }
+    .reviews__img {
+        max-width: 280px;
+    }
+    .main__img-4 {
+        max-width: 150px;
+    }
+    .main__img-5 {
+        max-width: 200px;
     }
 }

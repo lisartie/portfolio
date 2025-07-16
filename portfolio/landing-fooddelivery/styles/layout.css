@@ -130,6 +130,18 @@
     align-items: center;
     gap: 13px;
 }
+.main__img-6 {
+    position: relative;
+    left: 75%;
+    top: 180px
+}
+.main__img-7, .main__img-8 {
+    position: absolute;
+    z-index: -1;
+}
+.main__img-8 {
+    right: 0px;
+}
 @media (max-width: 1270px) {
     .main__img-2 {
         top: 1300px;
@@ -173,16 +185,31 @@
     .main__img-2 {
         top: 1400px;
     }
+    .main__img-6 {
+        left: 82%;
+    }
 }
 @media (max-width: 800px) {
     .about-us__wrapper {
         flex-direction: column;
+        gap: 40px;
     }
     .main__img-1 {
         top: 1490px;
     }
     .service__wrapper {
         gap: 50px;
+    }
+    .app {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .reviews {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer__content {
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 750px) {
@@ -266,6 +293,14 @@
         gap: 50px;
     }
     .main__img-3 {
+        display: none;
+    }
+    .main__img-6 {
+        left: 78%;
+    }
+}
+@media (max-width: 407px) {
+    .main__img-6 {
         display: none;
     }
 }
