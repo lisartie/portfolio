@@ -1,0 +1,23 @@
+[class*='__h2'] {
+    font-weight: 600;
+    line-height: 120%;
+}
+
+
+.summer-camp__photo {
+    display: flex;
+    position: relative;
+    max-width: 400px;
+}
+.summer-camp__img {
+    width: 100%;
+    height: 100%;
+    display: block;   
+}
+.summer-camp__blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
