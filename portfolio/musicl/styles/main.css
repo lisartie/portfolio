@@ -1,13 +1,18 @@
 [class*='__h2'] {
-    font-weight: 600;
-    line-height: 120%;
+    
 }
 
 
+.summer-camp {
+    max-width: var(--max-width-container-computer);
+    margin: var(--margin-section-computer);
+    padding: var(--padding-section-computer);
+}
 .summer-camp__photo {
     display: flex;
     position: relative;
     max-width: 400px;
+    min-width: 300px;
 }
 .summer-camp__img {
     width: 100%;
@@ -22,17 +27,66 @@
     height: 100%;
 }
 
+.summer-camp__content {
+    max-width: 500px;
+    padding: 0px 20px;
+}
 .summer-camp__title {
     position: relative;
+    margin: 0px 0px 30px;
+    max-width: 365px;
 }
 .summer-camp__h2 {
-    font-family: 'HarryPotterFont', sans-serif;
-    font-size: 72px;
-    line-height: 0px;
+    font-family: 'HarryPotterFontForTitle', sans-serif;
+    font-size: 100px;
 }
 .summer-camp__p {
     position: absolute;
+    font-family: 'HarryPotterFontForTitle-Text', sans-serif;
+    font-size: 32px;
 }
 .summer-camp__p_top {
-    top: -80px;
+    top: -25px;
+    right: 10px;
+}
+.summer-camp__p_bottom {
+    top: 85px;
+    right: 20px;
+}
+.summer-camp__text {
+    font-family: var(--font-for-text);
+    font-size: 22px;
+}
+
+
+
+/*posters*/
+.posters {
+    max-width: 1100px;
+    margin: var(--margin-section-computer);
+    padding: var(--padding-section-computer);
+}
+.posters__list {
+
+}
+.posters__paragraph {
+    border: none;
+    background-color: transparent;
+
+    :hover {
+        color: red;
+    }
+}
+.event {
+    padding: 10px 20px;
+}
+.event__content {
+    padding: 0px 10px;
+}
+.event__span {
+    font-weight: 800;
+}
+.event__p {
+    font-family: var(--font-for-text);
+    font-size: 25px;
 }

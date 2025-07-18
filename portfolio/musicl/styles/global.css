@@ -1,16 +1,43 @@
 /*Основные стили*/
 :root {
+    --max-width-container-computer: 1000px;
+    --margin-section-computer: 40px auto;
+    --padding-section-computer: 0px 20px;
 
+
+
+    /*fonts*/
+    --font-for-text: 'Text', sans-serif;
+
+    /*posters*/
+    --bg-not-active: ;
+    --bg-active: ;
 }
 
-* {}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
 body {}
 h1, h2 {}
 p {}
-a {}
+a {
+    text-decoration: none;
+}
 
 @font-face {
-    font-family: 'HarryPotterFont';
+    font-family: 'HarryPotterFontForTitle';
     src: url(/assets/fonts/HarryPotterRussianVersionofGfdtk.woff2) format('woff2');
     src: url(/assets/fonts/HarryPotterRussianVersionofGfdtk.woff) format('woff');
+}
+@font-face {
+    font-family: 'HarryPotterFontForTitle-Text';
+    src: url(/assets/fonts/GoodVibesPro.woff2) format('woff2');
+    src: url(/assets/fonts/GoodVibesPro.woff) format('woff');
+}
+@font-face {
+    font-family: 'Text';
+    src: url(/assets/fonts/GlametrixLight.woff2) format('woff2');
+    src: url(/assets/fonts/GlametrixLight.woff) format('woff');
 }
