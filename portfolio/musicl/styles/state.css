@@ -1,1 +1,14 @@
 /*состояния модулей*/
+
+.event_not-active {
+    display: none;
+}
+.posters__paragraph_not-active{ 
+    background-color: transparent;
+    border: none;
+    
+    &:hover {
+    background-color: rgba(181, 209, 209, 0.534); /*сменить*/
+        cursor: pointer;
+    }
+}

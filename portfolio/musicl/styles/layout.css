@@ -11,7 +11,7 @@
 
 .posters {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 20% 80%;
 }
 .posters__list {
     display: grid;
@@ -24,4 +24,44 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
+}
+.event__button {
+    padding: 10px 20px;
+    margin: 10px 0px 0px;
+    border-radius: 5px;
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.communication {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.communication__header {
+    position: relative;
+}
+.communication__button {
+    position: absolute;
+    top: -25px;
+    right: -35px;
+}
+.communication__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.communication__way {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.communication__img {
+    display: block;
 }

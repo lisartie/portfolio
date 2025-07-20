@@ -1,35 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/state.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <dialog class="communication">
+        <div class="communication__header">
+            <h2 class="communication__h2">Выберите удобный способ связи:</h2>
+            <button class="communication__button">
+                <img class="communication__img" src="assets/images/icon/close.png" alt="Иконка крестика для закрытия окна">
+            </button>
+        </div>
+        <div class="communication__block" itemscope itemtype="https://schema.org/Organization">
+            <a class="communication__way" href="https://vk.com/im/convo/-173826177?entrypoint=conversations_search"  target="_blank"  aria-label="Написать Вконтакте" itemprop="sameAs">
+                <img src="assets/images/icon/vk.png" alt="Логотип Вконтакте" class="communication__icon">
+                <p class="communication__name">Вконтакте</p>
+            </a>
+            <a class="communication__way" href="https://wa.me/79031025843"  target="_blank"  aria-label="Написать в WhatsApp" itemprop="sameAs">
+                <img src="assets/images/icon/wa.png" alt="Логотип WhatsApp" class="communication__icon">
+                <p class="communication__name">WhatsApp</p>
+            </a>
+            <a class="communication__way" href="https://t.me/DenisAdminST"  target="_blank"  aria-label="Написать в Telegram" itemprop="sameAs">
+                <img src="assets/images/icon/tg.png" alt="Логотип Telegram" class="communication__icon">
+                <p class="communication__name">Telegram</p>
+            </a>
+            <a class="communication__way" href="mailto:example@site.com"  target="_blank" aria-label="Написать письмо по электронной почте" itemprop="email">
+                <img src="assets/images/icon/mail.png" alt="Иконка письма" class="communication__icon">
+                <p class="communication__name">Эл. почта</p>
+            </a>
+            <a class="communication__way" href="tel:" aria-label="Эл. почта" itemprop="telephone">
+                <img src="assets/images/icon/call.png" alt="Иконка телефона" class="communication__icon">
+                <p class="communication__name">Звонок</p>
+            </a>
+        </div>
+    </dialog>
+
+
     <main>
         <section class="posters">
             <div class="posters__list">
-                <button class="posters__paragraph">1 сентября 2025</button>
-                <button class="posters__paragraph">1 октября 2025</button>
-                <button class="posters__paragraph">1 ноября 2025</button>
-                <button class="posters__paragraph">1 декабря 2025</button>
+                <button class="posters__paragraph" id="posters__paragraph-1">1 сентября 2025</button>
+                <button class="posters__paragraph posters__paragraph_not-active" id="posters__paragraph-2">1 октября 2025</button>
+                <button class="posters__paragraph posters__paragraph_not-active" id="posters__paragraph-3">1 ноября 2025</button>
+                <button class="posters__paragraph posters__paragraph_not-active" id="posters__paragraph-4">1 декабря 2025</button>
             </div>
             <div class="posters__events">
-                <div class="event">
-                    <img src="assets/images/posters/alie-parusa.jfif" alt="">
+                <div class="event" id="event-1">
+                    <img src="assets/images/posters/formula-lubvi.jpeg" alt="">
                     <div class="event__content">
-                        <h2 class="event__title"></h2>
+                        <h2 class="event__title">Формула любви</h2>
                         <p class="event__p"><span class="event__span">Дата</span> Описание</p>
                         <p class="event__p"><span class="event__span">Стоимость билетов</span> Описание</p>
                         <p class="event__p"><span class="event__span">Место проведения</span> Описание</p>
-                        <p class="event__p">Сюжет</p>
+                        <p class="event__p">Спектакль «Формула любви» – это виртуозное сочетание иронии, романтики и абсурда, характерное для Григория Горина. История, где переплетаются научный рационализм и иррациональность чувств, превращается в зрелищное размышление о природе любви. Герои – чудаки, мечтатели и прагматики – пытаются вывести формулу идеальных отношений, но сталкиваются с тем, что любовь не подчиняется законам логики.</p>
+                        <button class="event__button">Купить билет</button>
                     </div>
                 </div>
-                
+                <div class="event_not-active" id="event-2">
+                    <img src="assets/images/posters/alie-parusa.jfif" alt="">
+                    <div class="event__content">
+                        <h2 class="event__title">Алые паруса</h2>
+                        <p class="event__p"><span class="event__span">Дата</span> Описание</p>
+                        <p class="event__p"><span class="event__span">Стоимость билетов</span> Описание</p>
+                        <p class="event__p"><span class="event__span">Место проведения</span> Описание</p>
+                        <p class="event__p">Этот спектакль – не прямая адаптация знаменитой повести, а путешествие в гриновский мир: где реальность переплетается с мечтой, а обыденность расцвечивается огнями Зурбагана и Лисса. Через историю Ассоль и Грея, через отрывки из «Бегущей по волнам», «Золотой цепи» и других произведений зритель погружается в вселенную, где паруса действительно становятся алыми.</p>
+                        <button class="event__button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="event_not-active" id="event-3">
+                    <img src="assets/images/posters/zabit-gerostrata.jpeg" alt="">
+                    <div class="event__content">
+                        <h2 class="event__title">Забыть Герострата</h2>
+                        <p class="event__p"><span class="event__span">Дата</span> Описание</p>
+                        <p class="event__p"><span class="event__span">Стоимость билетов</span> Описание</p>
+                        <p class="event__p"><span class="event__span">Место проведения</span> Описание</p>
+                        <p class="event__p"></p>
+                        <button class="event__button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="event_not-active" id="event-4">
+                    <img src="assets/images/posters/formula-lubvi.jpeg" alt="">
+                    <div class="event__content">
+                        <h2 class="event__title">4</h2>
+                        <p class="event__p"><span class="event__span">Дата</span> Описание</p>
+                        <p class="event__p"><span class="event__span">Стоимость билетов</span> Описание</p>
+                        <p class="event__p"><span class="event__span">Место проведения</span> Описание</p>
+                        <p class="event__p"></p>
+                        <button class="event__button">Купить билет</button>
+                    </div>
+                </div>
             </div>
 
 
@@ -67,5 +132,29 @@
     </main>
 
     <script src="app/app.js"></script>
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "АНО Театр-студия Мюзикл",
+        "url": "https://ваш-сайт.ru",
+        "logo": "URL_вашего_логотипа.png",
+        "description": "Краткое описание вашей деятельности",
+        "telephone": "+79031025843",
+        "email": "example@site.com",
+        "sameAs": [
+            "https://vk.com/im/convo/-173826177",
+            "https://wa.me/79031025843",
+            "https://t.me/DenisAdminST"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Примерная, 123",
+            "addressLocality": "Ступино",
+            "postalCode": "142803",
+            "addressCountry": "RU"
+        }
+        }
+  </script>
 </body>
 </html>
